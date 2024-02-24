@@ -1,0 +1,147 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #e1e4d8;
+}
+
+#main-table-div td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.table-divs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-divs {
+  font-size: 20px;
+  text-align: center;
+  margin: 12px;
+}
+
+table {
+  border: 1px solid black;
+  text-align: center;
+  background-color: #7ca8ee;
+}
+
+#bowling-title {
+  font-family: "Audiowide", sans-serif;
+  font-size: 2.8em;
+}
+
+#alley-title {
+  font-size: 2em;
+}
+
+h3 {
+  font-style: italic;
+}
+
+header {
+  text-align: center;
+  margin: 2px 20px;
+}
+
+hr {
+  border: 2px solid whitesmoke;
+  border-top: 2px solid cornflowerblue;
+  border-bottom: 2px solid cornflowerblue;
+  border-radius: 2px;
+  max-width: 65%;
+}
+
+table, th {
+  border: 1px solid black;
+}
+
+#cart-tr-shoes {
+  visibility: collapse;
+}
+
+#cart-tr-shirt {
+  visibility: collapse;
+}
+
+#cart-tr-ball {
+  visibility: collapse;
+}
+
+td {
+  margin: 6px;
+  padding: 6px;
+}
+
+tr {
+  margin: 6px;
+  padding: 6px;
+  background-color: #7393f2;
+}
+
+#dollar-sign {
+  text-align: right;
+}
+
+#order-history-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+#result-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  text-align: center;
+}
+
+#banner-div img {
+  text-align: center;
+}
+
+#banner-div {
+  text-align: center;
+}
+
+#bowling-image-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.order-buttons {
+  margin: 6px;
+  background-color: #e19393;
+  padding: 6px;
+  border-radius: 3px;
+}
+
+.basic-button {
+  background-color: #e19393;
+  margin: 2px;
+}
+
+footer {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 9px;
+  padding: 6px;
+}
+
+#display-order-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}

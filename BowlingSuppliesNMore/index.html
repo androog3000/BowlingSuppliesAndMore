@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+
+<body>
+  <header>
+    <div id="banner-div">
+      <img src="img/banner.png" alt="Bowling Alley">
+    </div>
+    <h2 id="bowling-title">Bowling Supplies 'n More</h2>
+    <h3 id="alley-title">Right up your alley...</h3>
+  </header>
+  <hr>
+  <div id="main-div" class="main-divs">
+    <h4 class="headers">Top Deals</h4>
+    <div id="main-table-div" class="table-divs">
+      <table id="product-table">
+        <tr>
+          <th>Product</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th class="addCol">Add to Cart?</th>
+        </tr>
+        <tr>
+          <td>Bowling Shoes</td>
+          <td>Just don't wear them outside</td>
+          <td>$14.99</td>
+          <td><input type="button" id="addShoes" value="Add" class="basic-button"></td>
+        </tr>
+        <tr>
+          <td>Bowling Shirt</td>
+          <td>Only to be worn while bowling</td>
+          <td>$9.99</td>
+          <td><input type="button" id="addShirt" value="Add" class="basic-button"></td>
+        </tr>
+        <tr>
+          <td>Bowling Ball</td>
+          <td>Typically required in order to bowl</td>
+          <td>$24.99</td>
+          <td><input type="button" id="addBall" class="basic-button" value="Add"></td>
+        </tr>
+      </table>
+    </div> <!-- tableDiv -->
+  </div> <!-- mainDiv -->
+  <hr>
+  <div id="cart" class="main-divs">
+    <h4 class="headers">Cart</h4>
+    <div id="cart-table-div" class="table-divs">
+      <table id="cart-table">
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Total Price</th>
+        </tr>
+        <tr id="cart-tr-shoes">
+          <td id="shoes-cart-name"></td>
+          <td id="shoes-cart-quantity"></td>
+          <td id="shoes-cart-price"></td>
+        </tr>
+        <tr id="cart-tr-shirt">
+          <td id="shirt-cart-name"></td>
+          <td id="shirt-cart-quantity"></td>
+          <td id="shirt-cart-price"></td>
+        </tr>
+        <tr id="cart-tr-ball">
+          <td id="ball-cart-name"></td>
+          <td id="ball-cart-quantity"></td>
+          <td id="ball-cart-price"></td>
+        </tr>
+        <tr>
+          <td>Please select shipping method:</td>
+          <td>
+            <select name = "shipping-method" id="shipping-method">
+              <option value = "Select">Select</option>
+              <option value = "Ground">Ground</option>
+              <option value = "Express">Express</option>
+              <option value = "Gary from HR">Gary from HR</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td id="total-cost-text">Total Cost:</td>
+          <td id="dollar-sign">$</td>
+          <td id="total-cost-number"></td>
+        </tr>
+        <tr>
+          <td><button id="place-order" class="basic-button">Place Order</button></td>
+          <td><button id="clear-order" class="basic-button">Start Over</button></td>
+        </tr>
+      </table>
+    </div>
+  </div> <!-- cart div -->
+  <div id="result-message"></div>
+  <hr>
+  <div id="order-history-div">
+      <Button id="order-history-button" class="order-buttons">Display Order History</Button>
+      <Button id="hide-history-button" class="order-buttons">Hide Order History</Button>
+      <Button id="go-bowling" class="order-buttons">Go Bowling</Button>
+    </div>
+    <div id="display-order-history" class="main-divs"></div>
+    <div id="bowling-image-div">
+      <img id="bowling-image" src="img/strike.png" alt="Bowling Strike">
+  </div> <!-- order-history-div -->
+  <footer>
+    <p>Andrew Grant &copy;2023</p>
+    <p>CSUMB CST336</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
